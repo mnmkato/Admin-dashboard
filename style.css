@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    margin: 0;   
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+.header{
+    background-color: gray;
+    grid-area: 1/2/2/4;
+}
+.sidebar{
+    background-color: cornflowerblue;
+    grid-area: 1/1/4/2;
+}
+.content{
+    background-color: gainsboro;
+    grid-area: 2/2/4/3;
+}
+.announcements{
+    background-color: darkseagreen;
+    grid-area: 2/3/3/4;
+}
+.trending{
+    background-color: aquamarine;
+    grid-area: 3/3/4/4;
+}
+.menuitem{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.fa-solid{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}

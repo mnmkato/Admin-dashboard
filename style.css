@@ -1,5 +1,4 @@
 body{
-  
     margin: 0;   
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
@@ -9,7 +8,7 @@ body{
     min-width: 900px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 2fr 2fr;
+    grid-template-rows: auto;
 }
 .header{
     background-color: white;
@@ -25,11 +24,12 @@ body{
 }
 .announcements{
     margin-top: 1rem;
-    background-color: darkseagreen;
+    margin-right: 1rem;
     grid-area: 2/3/3/4;
 }
 .trending{
-    background-color: aquamarine;
+    margin-top: 1rem;
+    margin-right: 1rem;
     grid-area: 3/3/4/4;
 }
 .menuitem{
@@ -81,10 +81,14 @@ a:hover{
     margin-right: 1rem;
     border-radius: 50%;
 }
-h6{
+.profile p{
     margin: 0.2em;
 }
-h3{
+.profile_small p{
+    font-size: 16px;
+    font-weight: bold;
+}
+h6{
     margin: 0.2em;
 }
 input{
@@ -106,11 +110,12 @@ input{
 .nav>a{
     margin: 1rem;
     border-radius: 2rem;
-    padding: 0.5rem;
-    width: 5rem;
+    padding: 0.6rem;
+    width: 4rem;
     text-align: center;
     text-decoration: none;
     background-color:  rgb(25, 146, 212);
+    font-size: 13px;
 }
 .content>h4{
     margin: 0.5rem;
@@ -127,11 +132,10 @@ input{
     border-radius: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-   
+    box-shadow: 2px 2px 3px rgb(204, 209, 216) ;
 }
 .card>h5{
     margin-bottom: 0.5rem;
-    
 }
 .card>p{
     margin-top: 0;
@@ -143,4 +147,47 @@ input{
     display: flex;
     justify-content: end;
     margin-bottom: 1rem;
+}
+.announcements>h4{
+    margin: 0.5rem;
+}
+.announcements_card{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem ;
+    box-shadow: 2px 2px 3px rgb(204, 209, 216) ;
+}
+.announcements_item{
+    border-bottom: 1px ;
+}
+.announcements_item>p{
+    margin-top: 0;
+    font-size: 10px;
+    color: gray;
+}
+.trending_card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem ;
+    box-shadow: 2px 2px 3px rgb(204, 209, 216) ;
+}
+.trending_item{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+.trending_item>img{
+    border-radius: 50%;
+}
+.trending_item p{
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+}
+.trending>h4{
+    margin: 0.5rem;
 }

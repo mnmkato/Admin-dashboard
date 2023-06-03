@@ -2,26 +2,31 @@ body{
     height: 100vh;
     margin: 0;   
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
 .container{
+    background-color: rgb(226, 232, 240);
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
 }
 .header{
-    background-color: gray;
+    background-color: white;
     grid-area: 1/2/2/4;
 }
 .sidebar{
-    background-color: cornflowerblue;
+    background-color: rgb(25, 146, 212);
     grid-area: 1/1/4/2;
 }
 .content{
+    margin-top: 1rem;
     background-color: gainsboro;
     grid-area: 2/2/4/3;
 }
 .announcements{
+    margin-top: 1rem;
     background-color: darkseagreen;
     grid-area: 2/3/3/4;
 }
@@ -32,16 +37,81 @@ body{
 .menuitem{
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    color: white;
 }
 .fa-solid{
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 a:hover{
     text-decoration: underline;
+}
+.header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0px 2px 3px rgb(204, 209, 216) ;
+}
+.header_top,.header_bottom{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem
+}
+.header_top{
+    display: grid;
+    grid-template-columns: 2fr 3rem 1fr;
+    align-items: center;
+}
+.profile_small{
+    justify-self: end;
+}
+.header_bottom{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile>img{
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+h6{
+    margin: 0.2em;
+}
+h3{
+    margin: 0.2em;
+}
+input{
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0;
+    background-color: rgb(229, 229, 237);
+}
+.header>.fa-solid{
+    color: #000;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nav>a{
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color:  rgb(25, 146, 212);
 }
